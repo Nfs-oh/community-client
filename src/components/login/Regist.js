@@ -3,7 +3,7 @@ class Register extends Component {
   	render() {
     	return (
       		<div className="regist">
-      		/div>
+      		</div>
     	);
   	}
 }
