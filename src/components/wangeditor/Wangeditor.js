@@ -28,9 +28,7 @@ class Wangeditor extends Component {
    	 	return (
       		<div className="wangeditor">
           		<div ref="editorElem" className="wangeditor-box"></div>
-          		<div className="save-edit">
-          			<Button onClick={this.handleSave}>保存</Button>
-          		</div>
+          		
       		</div>
     	);
   	}

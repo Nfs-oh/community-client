@@ -1,0 +1,71 @@
+@import '../../style/global.scss';
+.edit {
+    width: 100%;
+    .container {
+        @include flex-row;
+        .article-menu {
+            width: 420px;
+            height: 100vh;
+            background-color: #fafafa;
+            .article-list {
+                width: 100%;
+                padding: 34px 44px 0 44px;
+                position: relative;
+                .article-poster {
+                    width: 100%;
+                    padding: 16px;
+                    height: 180px;
+                    background-color: #fff;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 2px solid #f20;
+                    .article-poster-content {
+                        width: 96%;
+                        height: 94%;
+                        background-color: #ccc;
+                        cursor: pointer;
+                    }
+                }
+                .article-operate {
+                    margin: 20px 60px 0 60px;
+                    @include flex-row;
+                    justify-content: space-around;
+                    .article-save-btn {
+                        background-color: #44b549;
+                        color: #fff;
+                        &:hover{
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+        .article-wrap {
+            flex: 1;
+            padding: 20px 20px 0 60px;
+            .article-msg {
+                padding: 10px 0;
+                color: #525252;
+                font-weight: 600;
+                font-size: 28px;
+                font-family: "Helvetica Neue","Hiragino Sans GB","Microsoft YaHei","\9ED1\4F53",Arial,sans-serif
+            }
+            .edit-description {
+                margin-top: 40px;
+                .desc-wrap {
+                    .desc-title, 
+                    .article-author,
+                    .article-title {
+                        margin-bottom: 12px;
+                        width: 100%;
+                        @include flex-row;
+                        .label {
+                            width: 36px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

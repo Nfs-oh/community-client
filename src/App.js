@@ -3,7 +3,7 @@ import HeaderWrap from "./components/header/Header.js";
 import Index from './views/index/Index.js';
 import Home from './views/home/Home.js';
 import ArticleList from './views/articleList/ArticleList.js';
-
+import Edit from './views/edit/Edit.js';
 import { 
 	BrowserRouter as Router,
 	Route,
@@ -20,7 +20,7 @@ class App extends Component {
 	      				<Route path="/" exact component={ Index }></Route>
 	      				<Route path="/home" exact component={ Home }></Route>
 	      				<Route path="/article" exact component={ ArticleList }></Route>
-	      				<Route></Route>
+	      				<Route path='/edit' component={ Edit }></Route>
 	      			</Switch>
 	      		</Router>
 	      	</div>

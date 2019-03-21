@@ -14,7 +14,7 @@ class Index extends Component {
 	    return (
 	      	<div className="index">
 				<div className="carousel">
-					<Carousel autoplay>
+					<Carousel>
 						<div className="carousel-item">
 							<img src={bg1} alt="未加载"/>
 						</div>
